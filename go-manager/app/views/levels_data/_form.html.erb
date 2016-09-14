@@ -1,0 +1,37 @@
+<%= form_for(levels_datum) do |f| %>
+  <% if levels_datum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(levels_datum.errors.count, "error") %> prohibited this levels_datum from being saved:</h2>
+
+      <ul>
+      <% levels_datum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :level %>
+    <%= f.text_field :level %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cp_multiplier %>
+    <%= f.text_field :cp_multiplier %>
+  </div>
+
+  <div class="field">
+    <%= f.label :stardust_to_power_up %>
+    <%= f.number_field :stardust_to_power_up %>
+  </div>
+
+  <div class="field">
+    <%= f.label :candy_to_power_up %>
+    <%= f.number_field :candy_to_power_up %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

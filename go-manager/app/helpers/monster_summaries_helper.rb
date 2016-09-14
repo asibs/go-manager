@@ -1,0 +1,2 @@
+module MonsterSummariesHelper
+end

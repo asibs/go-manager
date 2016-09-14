@@ -1,0 +1,2 @@
+json.extract! levels_datum, :id, :level, :level, :cp_multiplier, :cp_multiplier, :stardust_to_power_up, :candy_to_power_up, :created_at, :updated_at
+json.url levels_datum_url(levels_datum, format: :json)

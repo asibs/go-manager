@@ -1,0 +1,47 @@
+<%= form_for(monster_appraisal) do |f| %>
+  <% if monster_appraisal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(monster_appraisal.errors.count, "error") %> prohibited this monster_appraisal from being saved:</h2>
+
+      <ul>
+      <% monster_appraisal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :monster_id %>
+    <%= f.number_field :monster_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :appraisal_overall_phrase_id %>
+    <%= f.select :appraisal_overall_phrase_id, options_from_collection_for_select(AppraisalOverallPhrase.all, :id, :phrase) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :attack_best %>
+    <%= f.check_box :attack_best %>
+  </div>
+
+  <div class="field">
+    <%= f.label :defense_best %>
+    <%= f.check_box :defense_best %>
+  </div>
+
+  <div class="field">
+    <%= f.label :stamina_best %>
+    <%= f.check_box :stamina_best %>
+  </div>
+
+  <div class="field">
+    <%= f.label :appraisal_individual_phrase_id %>
+    <%= f.select :appraisal_individual_phrase_id, options_from_collection_for_select(AppraisalIndividualPhrase.all, :id, :phrase) %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

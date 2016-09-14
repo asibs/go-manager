@@ -1,0 +1,1 @@
+json.array! @appraisal_individual_phrases, partial: 'appraisal_individual_phrases/appraisal_individual_phrase', as: :appraisal_individual_phrase

@@ -1,0 +1,2 @@
+json.extract! monster_summary, :id, :min_attack_iv, :max_attack_iv, :min_defense_iv, :max_attack_iv, :min_stamina_iv, :max_stamina_iv, :min_maxed_cp, :max_maxed_cp, :min_maxed_hp, :max_maxed_hp, :created_at, :updated_at
+json.url monster_summary_url(monster_summary, format: :json)

@@ -1,0 +1,2 @@
+class LevelsDatum < ApplicationRecord
+end

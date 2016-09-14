@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Levels Data</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Cp multiplier</th>
+      <th>Stardust to power up</th>
+      <th>Candy to power up</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @levels_data.each do |levels_datum| %>
+      <tr>
+        <td><%= levels_datum.level %></td>=
+        <td><%= levels_datum.cp_multiplier %></td>
+        <td><%= levels_datum.stardust_to_power_up %></td>
+        <td><%= levels_datum.candy_to_power_up %></td>
+        <td><%= link_to 'Show', levels_datum %></td>
+        <td><%= link_to 'Edit', edit_levels_datum_path(levels_datum) %></td>
+        <td><%= link_to 'Destroy', levels_datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Levels Datum', new_levels_datum_path %>

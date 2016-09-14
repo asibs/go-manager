@@ -1,0 +1,37 @@
+<%= form_for(appraisal_overall_phrase) do |f| %>
+  <% if appraisal_overall_phrase.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(appraisal_overall_phrase.errors.count, "error") %> prohibited this appraisal_overall_phrase from being saved:</h2>
+
+      <ul>
+      <% appraisal_overall_phrase.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :team_leader %>
+    <%= f.select :team_leader, options_from_collection_for_select(TeamLeader.all, :id, :name) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phrase %>
+    <%= f.text_field :phrase %>
+  </div>
+
+  <div class="field">
+    <%= f.label :min_total_iv %>
+    <%= f.number_field :min_total_iv %>
+  </div>
+
+  <div class="field">
+    <%= f.label :max_total_iv %>
+    <%= f.number_field :max_total_iv %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Species No:</strong>
+  <%= @species_base_stat.species.species_no %>
+</p>
+
+<p>
+  <strong>Species Name:</strong>
+  <%= @species_base_stat.species.name %>
+</p>
+
+<p>
+  <strong>Base attack:</strong>
+  <%= @species_base_stat.base_attack %>
+</p>
+
+<p>
+  <strong>Base defense:</strong>
+  <%= @species_base_stat.base_defense %>
+</p>
+
+<p>
+  <strong>Base stamina:</strong>
+  <%= @species_base_stat.base_stamina %>
+</p>
+
+<%= link_to 'Edit', edit_species_base_stat_path(@species_base_stat) %> |
+<%= link_to 'Back', species_base_stats_path %>

@@ -1,0 +1,2 @@
+json.extract! appraisal_individual_phrase, :id, :phrase, :min_individual_iv, :max_individual_iv, :created_at, :updated_at
+json.url appraisal_individual_phrase_url(appraisal_individual_phrase, format: :json)

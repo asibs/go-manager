@@ -1,0 +1,1 @@
+json.partial! "monster_evolutions/monster_evolution", monster_evolution: @monster_evolution

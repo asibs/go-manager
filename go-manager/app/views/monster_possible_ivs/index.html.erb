@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Monster Possible Ivs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Monster</th>
+      <th>Level</th>
+      <th>Attack</th>
+      <th>Defense</th>
+      <th>Stamina</th>
+      <th>Maxed cp</th>
+      <th>Maxed hp</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @monster_possible_ivs.each do |monster_possible_iv| %>
+      <tr>
+        <td><%= monster_possible_iv.monster_id %></td>
+        <td><%= monster_possible_iv.level_id %></td>
+        <td><%= monster_possible_iv.attack %></td>
+        <td><%= monster_possible_iv.defense %></td>
+        <td><%= monster_possible_iv.stamina %></td>
+        <td><%= monster_possible_iv.maxed_cp %></td>
+        <td><%= monster_possible_iv.maxed_hp %></td>
+        <td><%= link_to 'Show', monster_possible_iv %></td>
+        <td><%= link_to 'Edit', edit_monster_possible_iv_path(monster_possible_iv) %></td>
+        <td><%= link_to 'Destroy', monster_possible_iv, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Monster Possible Iv', new_monster_possible_iv_path %>

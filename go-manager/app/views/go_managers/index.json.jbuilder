@@ -1,0 +1,1 @@
+json.array! @go_managers, partial: 'go_managers/go_manager', as: :go_manager

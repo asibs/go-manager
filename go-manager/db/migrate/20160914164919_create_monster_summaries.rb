@@ -4,7 +4,7 @@ class CreateMonsterSummaries < ActiveRecord::Migration[5.0]
       t.integer :min_attack_iv
       t.integer :max_attack_iv
       t.integer :min_defense_iv
-      t.integer :max_attack_iv
+      t.integer :max_defense_iv
       t.integer :min_stamina_iv
       t.integer :max_stamina_iv
       t.integer :min_maxed_cp

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160914164950) do
+ActiveRecord::Schema.define(version: 20160914230858) do
 
   create_table "appraisal_individual_phrases", force: :cascade do |t|
     t.string   "phrase"
@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20160914164950) do
     t.datetime "created_at",                                     null: false
     t.datetime "updated_at",                                     null: false
     t.index ["level"], name: "index_levels_data_on_level", unique: true
-    t.index ["stardust_to_power_up"], name: "index_levels_data_on_stardust_to_power_up", unique: true
+    t.index ["stardust_to_power_up"], name: "index_levels_data_on_stardust_to_power_up"
   end
 
   create_table "monster_appraisals", force: :cascade do |t|
@@ -85,6 +85,7 @@ ActiveRecord::Schema.define(version: 20160914164950) do
     t.integer  "min_attack_iv"
     t.integer  "max_attack_iv"
     t.integer  "min_defense_iv"
+    t.integer  "max_defense_iv"
     t.integer  "min_stamina_iv"
     t.integer  "max_stamina_iv"
     t.integer  "min_maxed_cp"
@@ -94,6 +95,9 @@ ActiveRecord::Schema.define(version: 20160914164950) do
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
     t.integer  "monster_id"
+    t.integer  "min_total_iv"
+    t.integer  "max_total_iv"
+    t.index ["monster_id"], name: "index_monster_summaries_on_monster_id", unique: true
   end
 
   create_table "monsters", force: :cascade do |t|

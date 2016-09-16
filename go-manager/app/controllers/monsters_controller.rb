@@ -1,4 +1,5 @@
 class MonstersController < ApplicationController
+  before_action :set_trainer
   before_action :set_monster, only: [:show, :edit, :update, :destroy]
 
   # GET /monsters
@@ -15,6 +16,7 @@ class MonstersController < ApplicationController
   # GET /monsters/new
   def new
     @monster = Monster.new
+    @monster.build
   end
 
   # GET /monsters/1/edit
@@ -28,7 +30,7 @@ class MonstersController < ApplicationController
 
     respond_to do |format|
       if @monster.save
-        format.html { redirect_to @monster, notice: 'Monster was successfully created.' }
+        format.html { redirect_to polymorphic_path([@trainer, @monster]), notice: 'Monster was successfully created.' }
         format.json { render :show, status: :created, location: @monster }
       else
         format.html { render :new }
@@ -42,7 +44,7 @@ class MonstersController < ApplicationController
   def update
     respond_to do |format|
       if @monster.update(monster_params)
-        format.html { redirect_to @monster, notice: 'Monster was successfully updated.' }
+        format.html { redirect_to polymorphic_path([@trainer, @monster]), notice: 'Monster was successfully updated.' }
         format.json { render :show, status: :ok, location: @monster }
       else
         format.html { render :edit }
@@ -56,12 +58,16 @@ class MonstersController < ApplicationController
   def destroy
     @monster.destroy
     respond_to do |format|
-      format.html { redirect_to monsters_url, notice: 'Monster was successfully destroyed.' }
+      format.html { redirect_to polymorphic_url([@trainer, Monster]), notice: 'Monster was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
+    def set_trainer
+      @trainer = Trainer.find(params[:trainer_id])
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_monster
       @monster = Monster.find(params[:id])

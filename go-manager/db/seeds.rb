@@ -287,7 +287,7 @@
 
 # Monster level data
 
-  levels_data = LevelsData.create(
+  levels_data = LevelsDatum.create(
     [ { level: 1, cp_multiplier: 0.094, stardust_to_power_up: 200, candy_to_power_up: 1 }, 
       { level: 1.5, cp_multiplier: 0.135137431784996, stardust_to_power_up: 200, candy_to_power_up: 1 }, 
       { level: 2, cp_multiplier: 0.16639787, stardust_to_power_up: 200, candy_to_power_up: 1 }, 
@@ -367,5 +367,4 @@
       { level: 39, cp_multiplier: 0.78463697, stardust_to_power_up: 10000, candy_to_power_up: 15 }, 
       { level: 39.5, cp_multiplier: 0.787473577639962, stardust_to_power_up: 10000, candy_to_power_up: 15 }, 
       { level: 40, cp_multiplier: 0.79030001, stardust_to_power_up: 10000, candy_to_power_up: 15 }, 
-      { level: 40.5, cp_multiplier: 0.793116363843478, stardust_to_power_up: , candy_to_power_up:  } ]
-
+      { level: 40.5, cp_multiplier: 0.793116363843478, stardust_to_power_up: nil, candy_to_power_up: nil } ])

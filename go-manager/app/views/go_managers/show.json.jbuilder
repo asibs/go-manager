@@ -1,1 +1,0 @@
-json.partial! "go_managers/go_manager", go_manager: @go_manager

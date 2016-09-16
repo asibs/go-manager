@@ -1,1 +1,0 @@
-json.partial! "monster_levels/monster_level", monster_level: @monster_level

@@ -1,2 +1,0 @@
-json.extract! monster_possible_iv, :id, :monster_id, :level_id, :attack, :defense, :stamina, :maxed_cp, :maxed_hp, :created_at, :updated_at
-json.url monster_possible_iv_url(monster_possible_iv, format: :json)

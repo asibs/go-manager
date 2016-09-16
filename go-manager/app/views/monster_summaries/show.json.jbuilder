@@ -1,1 +1,0 @@
-json.partial! "monster_summaries/monster_summary", monster_summary: @monster_summary

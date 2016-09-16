@@ -1,2 +1,0 @@
-json.extract! monster_appraisal, :id, :monster_id, :min_total_iv, :max_total_iv, :attack_best, :defense_best, :stamina_best, :min_best_iv, :max_best_iv, :created_at, :updated_at
-json.url monster_appraisal_url(monster_appraisal, format: :json)

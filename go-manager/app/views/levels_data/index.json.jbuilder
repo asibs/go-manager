@@ -1,1 +1,0 @@
-json.array! @levels_data, partial: 'levels_data/levels_datum', as: :levels_datum

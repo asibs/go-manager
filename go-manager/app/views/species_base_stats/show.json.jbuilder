@@ -1,1 +1,0 @@
-json.partial! "species_base_stats/species_base_stat", species_base_stat: @species_base_stat

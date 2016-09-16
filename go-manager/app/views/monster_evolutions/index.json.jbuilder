@@ -1,1 +1,0 @@
-json.array! @monster_evolutions, partial: 'monster_evolutions/monster_evolution', as: :monster_evolution

@@ -1,0 +1,2 @@
+module MonsterLevelsHelper
+end

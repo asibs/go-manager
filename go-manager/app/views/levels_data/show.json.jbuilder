@@ -1,0 +1,1 @@
+json.partial! "levels_data/levels_datum", levels_datum: @levels_datum

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Monster ID:</strong>
+  <%= @monster_appraisal.monster_id %>
+</p>
+
+<p>
+  <strong>Monster Name:</strong>
+  <%= @monster_appraisal.monster.name %>
+</p>
+
+<p>
+  <strong>Appraisal Overall:</strong>
+  <%= @monster_appraisal.appraisal_overall_phrase.phrase %>
+</p>
+
+<p>
+  <strong>Attack best:</strong>
+  <%= @monster_appraisal.attack_best %>
+</p>
+
+<p>
+  <strong>Defense best:</strong>
+  <%= @monster_appraisal.defense_best %>
+</p>
+
+<p>
+  <strong>Stamina best:</strong>
+  <%= @monster_appraisal.stamina_best %>
+</p>
+
+<p>
+  <strong>Appraisal Best Stat(s):</strong>
+  <%= @monster_appraisal.appraisal_individual_phrase.phrase %>
+</p>
+
+
+<%= link_to 'Edit', edit_monster_appraisal_path(@monster_appraisal) %> |
+<%= link_to 'Back', monster_appraisals_path %>

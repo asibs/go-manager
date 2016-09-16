@@ -1,0 +1,1 @@
+json.array! @species_base_stats, partial: 'species_base_stats/species_base_stat', as: :species_base_stat

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Monster:</strong>
+  <%= @monster_possible_iv.monster_id %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @monster_possible_iv.level_id %>
+</p>
+
+<p>
+  <strong>Attack:</strong>
+  <%= @monster_possible_iv.attack %>
+</p>
+
+<p>
+  <strong>Defense:</strong>
+  <%= @monster_possible_iv.defense %>
+</p>
+
+<p>
+  <strong>Stamina:</strong>
+  <%= @monster_possible_iv.stamina %>
+</p>
+
+<p>
+  <strong>Maxed cp:</strong>
+  <%= @monster_possible_iv.maxed_cp %>
+</p>
+
+<p>
+  <strong>Maxed hp:</strong>
+  <%= @monster_possible_iv.maxed_hp %>
+</p>
+
+<%= link_to 'Edit', edit_monster_possible_iv_path(@monster_possible_iv) %> |
+<%= link_to 'Back', monster_possible_ivs_path %>

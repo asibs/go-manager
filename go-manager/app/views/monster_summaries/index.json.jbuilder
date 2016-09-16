@@ -1,0 +1,1 @@
+json.array! @monster_summaries, partial: 'monster_summaries/monster_summary', as: :monster_summary

@@ -9,6 +9,6 @@ class CreateLevelsData < ActiveRecord::Migration[5.0]
       t.timestamps
     end
     add_index :levels_data, :level, unique: true
-    add_index :levels_data, :stardust_to_power_up, unique: true
+    add_index :levels_data, :stardust_to_power_up, unique: false
   end
 end

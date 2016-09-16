@@ -7,8 +7,8 @@
 
 <p>
   <strong>Trainer:</strong>
-  <%= @monster.trainer.name %>
+  <%= @trainer.name %>
 </p>
 
-<%= link_to 'Edit', edit_monster_path(@monster) %> |
-<%= link_to 'Back', monsters_path %>
+<%= link_to 'Edit', edit_polymorphic_path([@trainer, @monster]) %> |
+<%= link_to 'Back', polymorphic_path([@trainer, Monster]) %>

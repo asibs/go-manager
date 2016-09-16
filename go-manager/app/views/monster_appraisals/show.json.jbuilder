@@ -1,1 +1,0 @@
-json.partial! "monster_appraisals/monster_appraisal", monster_appraisal: @monster_appraisal

@@ -1,0 +1,2 @@
+module AppraisalBestStatsHelper
+end

@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= t(:TEAM_LEADERS) %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t(:TEAM_LEADER) %></th>
+      <th><%= t(:TEAM) %></th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @team_leaders.each do |team_leader| %>
+      <tr>
+        <td><%= t(team_leader.name) %></td>
+        <td><%= link_to t(team_leader.team.name), team_leader.team %></td>
+        <td><%= link_to 'Show', team_leader %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,1 @@
+json.partial! "team_leader_appraisal_overall_phrases/team_leader_appraisal_overall_phrase", team_leader_appraisal_overall_phrase: @team_leader_appraisal_overall_phrase

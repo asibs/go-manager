@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t(:TEAM_LEADER) %>:</strong>
+  <%= link_to @team_leader_appraisal_best_stat_phrase.team_leader.name, @team_leader_appraisal_best_stat_phrase.team_leader %>
+</p>
+
+<p>
+  <strong><%= t(:SHORT_PHRASE) %>:</strong>
+  <%= short_t(@team_leader_appraisal_best_stat_phrase.phrase) %>
+</p>
+
+<p>
+  <strong><%= t(:FULL_PHRASE) %>:</strong>
+  <%= t(@team_leader_appraisal_best_stat_phrase.phrase) %>
+</p>
+
+<p>
+  <strong><%= t(:MIN_BEST_STAT_IV) %>:</strong>
+  <%= @team_leader_appraisal_best_stat_phrase.appraisal_best_stat.min_stat_iv %>
+</p>
+
+<p>
+  <strong><%= t(:MAX_BEST_STAT_IV) %>:</strong>
+  <%= @team_leader_appraisal_best_stat_phrase.appraisal_best_stat.max_stat_iv %>
+</p>
+
+<%= link_to 'Back', team_leader_appraisal_best_stat_phrases_path %>

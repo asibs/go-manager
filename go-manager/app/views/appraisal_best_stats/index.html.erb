@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= t(:APPRAISAL_BEST_STATS) %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t(:APPRAISAL_CLASS) %></th>
+      <th><%= t(:MIN_BEST_STAT_IV) %></th>
+      <th><%= t(:MAX_BEST_STAT_IV) %></th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @appraisal_best_stats.each do |appraisal_best_stat| %>
+      <tr>
+        <td><%= appraisal_best_stat.appraisal_class %></td>
+        <td><%= appraisal_best_stat.min_stat_iv %></td>
+        <td><%= appraisal_best_stat.max_stat_iv %></td>
+        <td><%= link_to 'Show', appraisal_best_stat %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,1 @@
+json.array! @team_leader_appraisal_best_stat_phrases, partial: 'team_leader_appraisal_best_stat_phrases/team_leader_appraisal_best_stat_phrase', as: :team_leader_appraisal_best_stat_phrase

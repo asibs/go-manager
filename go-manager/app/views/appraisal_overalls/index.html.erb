@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= t(:APPRAISAL_OVERALLS) %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t(:APPRAISAL_CLASS) %></th>
+      <th><%= t(:MIN_TOTAL_IV) %></th>
+      <th><%= t(:MAX_TOTAL_IV) %></th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @appraisal_overalls.each do |appraisal_overall| %>
+      <tr>
+        <td><%= appraisal_overall.appraisal_class %></td>
+        <td><%= appraisal_overall.min_total_iv %></td>
+        <td><%= appraisal_overall.max_total_iv %></td>
+        <td><%= link_to 'Show', appraisal_overall %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

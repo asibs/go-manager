@@ -1,0 +1,1 @@
+json.partial! "appraisal_best_stats/appraisal_best_stat", appraisal_best_stat: @appraisal_best_stat

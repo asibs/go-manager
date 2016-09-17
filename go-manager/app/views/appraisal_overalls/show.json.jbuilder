@@ -1,0 +1,1 @@
+json.partial! "appraisal_overalls/appraisal_overall", appraisal_overall: @appraisal_overall

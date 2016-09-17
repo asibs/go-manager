@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t(:TEAM_LEADER) %>:</strong>
+  <%= link_to t(@team_leader_appraisal_overall_phrase.team_leader.name), @team_leader_appraisal_overall_phrase.team_leader %>
+</p>
+
+<p>
+  <strong><%= t(:SHORT_PHRASE) %>:</strong>
+  <%= short_t(@team_leader_appraisal_overall_phrase.phrase) %>
+</p>
+
+<p>
+  <strong><%= t(:FULL_PHRASE) %>:</strong>
+  <%= t(@team_leader_appraisal_overall_phrase.phrase) %>
+</p>
+
+<p>
+  <strong><%= t(:MIN_TOTAL_IV) %>:</strong>
+  <%= @team_leader_appraisal_overall_phrase.appraisal_overall.min_total_iv %>
+</p>
+
+<p>
+  <strong><%= t(:MAX_TOTAL_IV) %>:</strong>
+  <%= @team_leader_appraisal_overall_phrase.appraisal_overall.max_total_iv %>
+</p>
+
+<%= link_to 'Back', team_leader_appraisal_overall_phrases_path %>

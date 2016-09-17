@@ -1,0 +1,2 @@
+class AppraisalBestStat < ApplicationRecord
+end

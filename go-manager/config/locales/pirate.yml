@@ -1,0 +1,143 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+pirate:
+  
+  # ********************************* #
+  # *** STATIC DATA FROM DATABASE *** #
+  # ********************************* #
+
+  # Team stuff
+  VALOR: "Valor"
+  MYSTIC: "Mystic"
+  INSTINCT: "Instinct"
+
+  RED: "Red as blood"
+  BLUE: "Deep sea Blue"
+  YELLOW: "Yellow - Like yer father!"
+
+  CANDELA: "Cap'n Candela"
+  BLANCHE: "Buccaneer Blanche"
+  SPARK: "Scurvy Spark"
+
+  # Team Leader Appraisal Phrases
+  CANDELA_OVERALL_AMAZING: "Yarr, yer Seamonster amazes me. It'll make a fine addition to yer crew!"
+  CANDELA_OVERALL_STRONG: "Yarr, yer Seamonster's a strong Seamonster. You should be proud!"
+  CANDELA_OVERALL_DECENT: "Yarr, yer Seamonster's a decent Seamonster"
+  CANDELA_OVERALL_POOR: "Yarr, yer Seamonster ain't great in battle, I'd send it to Davey Jones Locker if I were you!"
+
+  BLANCHE_OVERALL_AMAZING: "Ahoy, yer Seamonster is a wonder! It's taken the wind out o me sails!"
+  BLANCHE_OVERALL_STRONG: "Ahoy, yer Seamonster has caught me attention."
+  BLANCHE_OVERALL_DECENT: "Ahoy, yer Seamonster is above average."
+  BLANCHE_OVERALL_POOR: "Ahoy, yer Seamonster ain't likely to make much headway in battle. I'd make it walk the plank!"
+
+  SPARK_OVERALL_AMAZING: "Yo ho ho, yer Seamonster looks like it can battle with the best o' them!"
+  SPARK_OVERALL_STRONG: "Yo ho ho, yer Seamonster is really strong!"
+  SPARK_OVERALL_DECENT: "Yo ho ho, yer Seamonster is pretty decent!"
+  SPARK_OVERALL_POOR: "Yo ho ho, yer Seamonster has room for improvement in battle. It's no good 'cept fer fish food!"
+
+  CANDELA_BEST_STAT_AMAZING: "I'm blown away by its abilities. Shiver me timbers!"
+  CANDELA_BEST_STAT_STRONG: "It's got excellent abilities!"
+  CANDELA_BEST_STAT_DECENT: "Its abilities indicate that in battle, it'll get the job done."
+  CANDELA_BEST_STAT_POOR: "Its abilities don't point to greatness in battle."
+
+  BLANCHE_BEST_STAT_AMAZING: "Its abilities exceed my calculations. Blimey!"
+  BLANCHE_BEST_STAT_STRONG: "I'm impressed by its abilities, savvy?"
+  BLANCHE_BEST_STAT_DECENT: "Its abilities are blowing me sails the right way."
+  BLANCHE_BEST_STAT_POOR: "Its abilities are normal, fer a scurvy sea dog."
+
+  SPARK_BEST_STAT_AMAZING: "Its abilities are the best I've seen in all the seven seas!"
+  SPARK_BEST_STAT_STRONG: "Its abilities are really strong!"
+  SPARK_BEST_STAT_DECENT: "It's got some good abilities."
+  SPARK_BEST_STAT_POOR: "Its abilities are all right, but not quite shipshape, as far as I can tell."
+
+  # Shortened Team Leader Appraisal Phrases (for use in drop downs)
+  SHORT_CANDELA_OVERALL_AMAZING: "Amazes me"
+  SHORT_CANDELA_OVERALL_STRONG: "Strong"
+  SHORT_CANDELA_OVERALL_DECENT: "Decent"
+  SHORT_CANDELA_OVERALL_POOR: "Not great"
+
+  SHORT_BLANCHE_OVERALL_AMAZING: "Wind out o me sails"
+  SHORT_BLANCHE_OVERALL_STRONG: "Caught me attention"
+  SHORT_BLANCHE_OVERALL_DECENT: "Above average"
+  SHORT_BLANCHE_OVERALL_POOR: "Unlikely to make headway"
+
+  SHORT_SPARK_OVERALL_AMAZING: "Battle with the best"
+  SHORT_SPARK_OVERALL_STRONG: "Strong"
+  SHORT_SPARK_OVERALL_DECENT: "Decent"
+  SHORT_SPARK_OVERALL_POOR: "Room for improvement"
+
+  SHORT_CANDELA_BEST_STAT_AMAZING: "Blown away"
+  SHORT_CANDELA_BEST_STAT_STRONG: "Excellent"
+  SHORT_CANDELA_BEST_STAT_DECENT: "It'll get the job done"
+  SHORT_CANDELA_BEST_STAT_POOR: "Not great"
+
+  SHORT_BLANCHE_BEST_STAT_AMAZING: "Blimey"
+  SHORT_BLANCHE_BEST_STAT_STRONG: "Impressed"
+  SHORT_BLANCHE_BEST_STAT_DECENT: "Blowing me sails the right way"
+  SHORT_BLANCHE_BEST_STAT_POOR: "Normal"
+
+  SHORT_SPARK_BEST_STAT_AMAZING: "Best in Seven Seas"
+  SHORT_SPARK_BEST_STAT_STRONG: "Strong"
+  SHORT_SPARK_BEST_STAT_DECENT: "Good"
+  SHORT_SPARK_BEST_STAT_POOR: "Not shipshape"
+
+  
+  # ********************** #
+  # *** VIEW CONSTANTS *** #
+  # ********************** #
+
+  # Team stuff
+  TEAM: "Ship"
+  TEAMS: "Ships"
+  COLOR: "Color"
+
+  # Team Leader stuff
+  TEAM_LEADER: "Ship Captain"
+  TEAM_LEADERS: "Ship Captains"
+  
+  # Appraisal stuff
+  APPRAISAL_OVERALL: "Overall Appraisal"
+  APPRAISAL_OVERALLS: "Overall Appraisals"
+
+  APPRAISAL_BEST_STAT: "Best Ability Appraisal"
+  APPRAISAL_BEST_STATS: "Best Ability Appraisals"
+
+  APPRAISAL_OVERALL_PHRASE: "Overall Appraisal Phrase"
+  APPRAISAL_OVERALL_PHRASES: "Overall Appraisal Phrases"
+
+  APPRAISAL_BEST_STAT_PHRASE: "Best Ability Appraisal Phrase"
+  APPRAISAL_BEST_STAT_PHRASES: "Best Ability Appraisal Phrases"
+
+  TEAM_LEADER_APPRAISAL_OVERALL_PHRASE: "Team Leader Appraisal Overall Phrase"
+  TEAM_LEADER_APPRAISAL_OVERALL_PHRASES: "Team Leader Appraisal Overall Phrases"
+
+  TEAM_LEADER_APPRAISAL_BEST_STATE_PHRASE: "Team Leader Appraisal Best Ability Phrase"
+  TEAM_LEADER_APPRAISAL_BEST_STAT_PHRASES: "Team Leader Appraisal Best Ability Phrases"
+
+  SHORT_PHRASE: "Short Phrase"
+  LONG_PHRASE: "Long Phrase"
+
+  MIN_TOTAL_IV: "Min Total Ability Score"
+  MAX_TOTAL_IV: "Max Total Ability Score"
+
+  MIN_BEST_STAT_IV: "Min Best Ability Score"
+  MAX_BEST_STAT_IV: "Max Best Ability Score"

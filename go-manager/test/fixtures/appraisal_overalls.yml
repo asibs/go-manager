@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  appraisal_class: MyString
+  min_total_iv: 1
+  max_total_iv: 1
+
+two:
+  appraisal_class: MyString
+  min_total_iv: 1
+  max_total_iv: 1

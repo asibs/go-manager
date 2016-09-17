@@ -1,0 +1,143 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  
+  # ********************************* #
+  # *** STATIC DATA FROM DATABASE *** #
+  # ********************************* #
+
+  # Team stuff
+  VALOR: "Valor"
+  MYSTIC: "Mystic"
+  INSTINCT: "Instinct"
+
+  RED: "Red"
+  BLUE: "Blue"
+  YELLOW: "Yellow"
+
+  CANDELA: "Candela"
+  BLANCHE: "Blanche"
+  SPARK: "Spark"
+
+  # Team Leader Appraisal Phrases
+  CANDELA_OVERALL_AMAZING: "Overall, your Pokemon simply amazes me. It can accomplish anything!"
+  CANDELA_OVERALL_STRONG: "Overall, your Pokemon is a strong Pokemon. You should be proud!"
+  CANDELA_OVERALL_DECENT: "Overall, your Pokemon is a decent Pokemon"
+  CANDELA_OVERALL_POOR: "Overall, your Pokemon may not be great in battle, but I still like it!"
+
+  BLANCHE_OVERALL_AMAZING: "Overall, your Pokemon is a wonder! What a breathtaking Pokemon!"
+  BLANCHE_OVERALL_STRONG: "Overall, your Pokemon has certainly caught my attention."
+  BLANCHE_OVERALL_DECENT: "Overall, your Pokemon is above average."
+  BLANCHE_OVERALL_POOR: "Overall, your Pokemon is not likely to make much headway in battle."
+
+  SPARK_OVERALL_AMAZING: "Overall, your Pokemon looks like it can really battle with the best of them!"
+  SPARK_OVERALL_STRONG: "Overall, your Pokemon is really strong!"
+  SPARK_OVERALL_DECENT: "Overall, your Pokemon is pretty decent!"
+  SPARK_OVERALL_POOR: "Overall, your Pokemon has room for improvement as far as battling goes."
+
+  CANDELA_BEST_STAT_AMAZING: "I'm blown away by its stats. WOW!"
+  CANDELA_BEST_STAT_STRONG: "It's got excellent stats! How exciting!"
+  CANDELA_BEST_STAT_DECENT: "Its stats indicate that in battle, it'll get the job done."
+  CANDELA_BEST_STAT_POOR: "Its stats don't point to greatness in battle."
+
+  BLANCHE_BEST_STAT_AMAZING: "Its stats exceed my calculations. It's incredible!"
+  BLANCHE_BEST_STAT_STRONG: "I am certainly impressed by its stats, I must say."
+  BLANCHE_BEST_STAT_DECENT: "Its stats are noticeably trending to the positive."
+  BLANCHE_BEST_STAT_POOR: "Its stats are not out of the norm, in my estimation."
+
+  SPARK_BEST_STAT_AMAZING: "Its stats are the best I've ever seen! No doubt about it!"
+  SPARK_BEST_STAT_STRONG: "Its stats are really strong! Impressive."
+  SPARK_BEST_STAT_DECENT: "It's definitely got some good stats. Definitely!"
+  SPARK_BEST_STAT_POOR: "Its stats are all right, but kinda basic, as far as I can see."
+
+  # Shortened Team Leader Appraisal Phrases (for use in drop downs)
+  SHORT_CANDELA_OVERALL_AMAZING: "Amazes me"
+  SHORT_CANDELA_OVERALL_STRONG: "Strong"
+  SHORT_CANDELA_OVERALL_DECENT: "Decent"
+  SHORT_CANDELA_OVERALL_POOR: "Not great"
+
+  SHORT_BLANCHE_OVERALL_AMAZING: "Breathtaking"
+  SHORT_BLANCHE_OVERALL_STRONG: "Caught my attention"
+  SHORT_BLANCHE_OVERALL_DECENT: "Above average"
+  SHORT_BLANCHE_OVERALL_POOR: "Unlikely to make headway"
+
+  SHORT_SPARK_OVERALL_AMAZING: "Battle with the best"
+  SHORT_SPARK_OVERALL_STRONG: "Strong"
+  SHORT_SPARK_OVERALL_DECENT: "Decent"
+  SHORT_SPARK_OVERALL_POOR: "Room for improvement"
+
+  SHORT_CANDELA_BEST_STAT_AMAZING: "Blown away"
+  SHORT_CANDELA_BEST_STAT_STRONG: "Excellent"
+  SHORT_CANDELA_BEST_STAT_DECENT: "It'll get the job done"
+  SHORT_CANDELA_BEST_STAT_POOR: "Not great"
+
+  SHORT_BLANCHE_BEST_STAT_AMAZING: "Incredible"
+  SHORT_BLANCHE_BEST_STAT_STRONG: "Impressed"
+  SHORT_BLANCHE_BEST_STAT_DECENT: "Trending positive"
+  SHORT_BLANCHE_BEST_STAT_POOR: "Not out of the norm"
+
+  SHORT_SPARK_BEST_STAT_AMAZING: "Best I've ever seen"
+  SHORT_SPARK_BEST_STAT_STRONG: "Strong"
+  SHORT_SPARK_BEST_STAT_DECENT: "Good"
+  SHORT_SPARK_BEST_STAT_POOR: "Basic"
+
+
+  # ********************** #
+  # *** VIEW CONSTANTS *** #
+  # ********************** #
+
+  # Team stuff
+  TEAM: "Team"
+  TEAMS: "Teams"
+  COLOR: "Color"
+  
+  # Team Leader stuff
+  TEAM_LEADER: "Team Leader"
+  TEAM_LEADERS: "Team Leaders"
+  
+  # Appraisal stuff
+  APPRAISAL_OVERALL: "Overall Appraisal"
+  APPRAISAL_OVERALLS: "Overall Appraisals"
+
+  APPRAISAL_BEST_STAT: "Best Stat Appraisal"
+  APPRAISAL_BEST_STATS: "Best Stat Appraisals"
+
+  APPRAISAL_OVERALL_PHRASE: "Overall Appraisal Phrase"
+  APPRAISAL_OVERALL_PHRASES: "Overall Appraisal Phrases"
+
+  APPRAISAL_BEST_STAT_PHRASE: "Best Stat Appraisal Phrase"
+  APPRAISAL_BEST_STAT_PHRASES: "Best Stat Appraisal Phrases"
+
+  TEAM_LEADER_APPRAISAL_OVERALL_PHRASE: "Team Leader Appraisal Overall Phrase"
+  TEAM_LEADER_APPRAISAL_OVERALL_PHRASES: "Team Leader Appraisal Overall Phrases"
+
+  TEAM_LEADER_APPRAISAL_BEST_STATE_PHRASE: "Team Leader Appraisal Best Stat Phrase"
+  TEAM_LEADER_APPRAISAL_BEST_STAT_PHRASES: "Team Leader Appraisal Best Stat Phrases"
+
+  SHORT_PHRASE: "Short Phrase"
+  LONG_PHRASE: "Long Phrase"
+
+  MIN_TOTAL_IV: "Min Total IV"
+  MAX_TOTAL_IV: "Max Total IV"
+
+  MIN_BEST_STAT_IV: "Min Best Stat IV"
+  MAX_BEST_STAT_IV: "Max Best Stat IV"

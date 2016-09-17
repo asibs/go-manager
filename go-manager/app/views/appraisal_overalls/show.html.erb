@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t(:APPRAISAL_CLASS) %>:</strong>
+  <%= @appraisal_overall.appraisal_class %>
+</p>
+
+<p>
+  <strong><%= t(:MIN_TOTAL_IV) %>:</strong>
+  <%= @appraisal_overall.min_total_iv %>
+</p>
+
+<p>
+  <strong><%= t(:MAX_TOTAL_IV) %>:</strong>
+  <%= @appraisal_overall.max_total_iv %>
+</p>
+
+<%= link_to 'Back', appraisal_overalls_path %>

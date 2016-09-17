@@ -1,0 +1,67 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t(:TEAM_LEADER) %>:</strong>
+  <%= t(@team_leader.name) %>
+</p>
+
+<p>
+  <strong><%= t(:TEAM) %>:</strong>
+  <%= link_to t(@team_leader.team.name), @team_leader.team %>
+</p>
+
+<p>
+  <strong><%= t(:APPRAISAL_OVERALL_PHRASES) %>:</strong>
+  <table>
+    <thead>
+      <tr>
+        <th><%= t(:SHORT_PHRASE) %></th>
+        <th><%= t(:FULL_PHRASE) %></th>
+        <th><%= t(:MIN_TOTAL_IV) %></th>
+        <th><%= t(:MAX_TOTAL_IV) %></th>
+        <th colspan="1"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @team_leader.team_leader_appraisal_overall_phrase.each do |appraisal_overall_phrase| %>
+        <tr>
+          <td><%= short_t(appraisal_overall_phrase.phrase) %></td>
+          <td><%= t(appraisal_overall_phrase.phrase) %></td>
+          <td><%= appraisal_overall_phrase.appraisal_overall.min_total_iv %></td>
+          <td><%= appraisal_overall_phrase.appraisal_overall.max_total_iv %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</p>
+
+<p>
+  <strong><%= t(:APPRAISAL_BEST_STAT_PHRASES) %>:</strong>
+  <table>
+    <thead>
+      <tr>
+        <th><%= t(:SHORT_PHRASE) %></th>
+        <th><%= t(:FULL_PHRASE) %></th>
+        <th><%= t(:MIN_BEST_STAT_IV) %></th>
+        <th><%= t(:MAX_BEST_STAT_IV) %></th>
+        <th colspan="1"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @team_leader.team_leader_appraisal_best_stat_phrase.each do |appraisal_best_stat_phrase| %>
+        <tr>
+          <td><%= short_t(appraisal_best_stat_phrase.phrase) %></td>
+          <td><%= t(appraisal_best_stat_phrase.phrase) %></td>
+          <td><%= appraisal_best_stat_phrase.appraisal_best_stat.min_stat_iv %></td>
+          <td><%= appraisal_best_stat_phrase.appraisal_best_stat.max_stat_iv %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</p>
+
+
+
+<%= link_to 'Back', team_leaders_path %>

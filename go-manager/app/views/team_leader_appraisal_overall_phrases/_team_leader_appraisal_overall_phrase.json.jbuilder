@@ -1,0 +1,2 @@
+json.extract! team_leader_appraisal_overall_phrase, :id, :team_leader_id, :appraisal_overall_id, :phrase, :created_at, :updated_at
+json.url team_leader_appraisal_overall_phrase_url(team_leader_appraisal_overall_phrase, format: :json)

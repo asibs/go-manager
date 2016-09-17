@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t(:TEAM) %>:</strong>
+  <%= t(@team.name) %>
+</p>
+
+<p>
+  <strong><%= t(:COLOR) %>:</strong>
+  <%= t(@team.color) %>
+</p>
+
+<p>
+  <strong><%= t(:TEAM_LEADER) %>:</strong>
+  <%= link_to t(@team.team_leader.name), @team.team_leader %>
+</p>
+
+<%= link_to 'Back', teams_path %>

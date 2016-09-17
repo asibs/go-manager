@@ -100,6 +100,8 @@ pirate:
   SHORT_SPARK_BEST_STAT_DECENT: "Good"
   SHORT_SPARK_BEST_STAT_POOR: "Not shipshape"
 
+  # Don't define species names, will fallback to english
+
   
   # ********************** #
   # *** VIEW CONSTANTS *** #
@@ -130,7 +132,7 @@ pirate:
   TEAM_LEADER_APPRAISAL_OVERALL_PHRASE: "Team Leader Appraisal Overall Phrase"
   TEAM_LEADER_APPRAISAL_OVERALL_PHRASES: "Team Leader Appraisal Overall Phrases"
 
-  TEAM_LEADER_APPRAISAL_BEST_STATE_PHRASE: "Team Leader Appraisal Best Ability Phrase"
+  TEAM_LEADER_APPRAISAL_BEST_STAT_PHRASE: "Team Leader Appraisal Best Ability Phrase"
   TEAM_LEADER_APPRAISAL_BEST_STAT_PHRASES: "Team Leader Appraisal Best Ability Phrases"
 
   SHORT_PHRASE: "Short Phrase"
@@ -141,3 +143,11 @@ pirate:
 
   MIN_BEST_STAT_IV: "Min Best Ability Score"
   MAX_BEST_STAT_IV: "Max Best Ability Score"
+
+  # Species stuff
+  SPECIES_SINGULAR: "Seamonster Type"
+  SPECIES_PLURAL: "Seamonster Types"
+  SPECIES_NO: "Seamonster Number"
+  BASE_ATTACK: "Base Attack"
+  BASE_DEFENSE: "Base Defense"
+  BASE_STAMINA: "Base Stamina"

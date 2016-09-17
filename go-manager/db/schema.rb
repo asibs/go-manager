@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160917012019) do
+ActiveRecord::Schema.define(version: 20160917163100) do
 
   create_table "appraisal_best_stats", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "appraisal_class"
@@ -28,6 +28,18 @@ ActiveRecord::Schema.define(version: 20160917012019) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
     t.index ["appraisal_class"], name: "index_appraisal_overalls_on_appraisal_class", unique: true, using: :btree
+  end
+
+  create_table "species", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "species_no"
+    t.string   "name"
+    t.integer  "base_attack"
+    t.integer  "base_defense"
+    t.integer  "base_stamina"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["name"], name: "index_species_on_name", unique: true, using: :btree
+    t.index ["species_no"], name: "index_species_on_species_no", unique: true, using: :btree
   end
 
   create_table "team_leader_appraisal_best_stat_phrases", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

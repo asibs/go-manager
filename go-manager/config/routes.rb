@@ -9,4 +9,6 @@ Rails.application.routes.draw do
 
   resources :team_leader_appraisal_overall_phrases, only: [:index, :show]
   resources :team_leader_appraisal_best_stat_phrases, only: [:index, :show]
+
+  resources :species, only: [:index, :show]
 end

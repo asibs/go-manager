@@ -17,6 +17,6 @@ module GoManager
     I18n.config.available_locales = :en
     I18n.config.available_locales = :pirate
     I18n.default_locale = :pirate
-    config.i18n.fallbacks = false
+    config.i18n.fallbacks = [:en]
   end
 end

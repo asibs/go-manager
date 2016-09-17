@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t(:SPECIES_NO) %>:</strong>
+  <%= @species.species_no %>
+</p>
+
+<p>
+  <strong><%= t(:SPECIES_SINGULAR) %>:</strong>
+  <%= t(@species.name) %>
+</p>
+
+<p>
+  <strong><%= t(:BASE_ATTACK) %>:</strong>
+  <%= @species.base_attack %>
+</p>
+
+<p>
+  <strong><%= t(:BASE_DEFENSE) %>:</strong>
+  <%= @species.base_defense %>
+</p>
+
+<p>
+  <strong><%= t(:BASE_STAMINA) %>:</strong>
+  <%= @species.base_stamina %>
+</p>
+
+<%= link_to 'Back', species_index_path %>

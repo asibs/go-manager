@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= t(:SPECIES_PLURAL) %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t(:SPECIES_NO) %></th>
+      <th><%= t(:SPECIES_SINGULAR) %></th>
+      <th><%= t(:BASE_ATTACK) %></th>
+      <th><%= t(:BASE_DEFESNSE) %></th>
+      <th><%= t(:BASE_STAMINA) %></th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @species.each do |species| %>
+      <tr>
+        <td><%= species.species_no %></td>
+        <td><%= t(species.name) %></td>
+        <td><%= species.base_attack %></td>
+        <td><%= species.base_defense %></td>
+        <td><%= species.base_stamina %></td>
+        <td><%= link_to 'Show', species %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

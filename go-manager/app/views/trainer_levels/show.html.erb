@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t(:TRAINER_LEVEL) %>:</strong>
+  <%= @trainer_level.level %>
+</p>
+
+<p>
+  <strong><%= t(:TOTAL_XP) %>:</strong>
+  <%= @trainer_level.total_xp %>
+</p>
+
+<p>
+  <strong><%= t(:XP_TO_NEXT_LEVEL) %>:</strong>
+  <%= @trainer_level.xp_to_next_level %>
+</p>
+
+<%= link_to 'Back', trainer_levels_path %>

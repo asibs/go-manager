@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level: 
+  level: 
+  cp_multiplier: 
+  cp_multiplier: 
+  dust_to_level_up: 1
+  candy_to_level_up: 1
+
+two:
+  level: 
+  level: 
+  cp_multiplier: 
+  cp_multiplier: 
+  dust_to_level_up: 1
+  candy_to_level_up: 1

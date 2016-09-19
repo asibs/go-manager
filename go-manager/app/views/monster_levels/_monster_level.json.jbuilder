@@ -1,0 +1,2 @@
+json.extract! monster_level, :id, :level, :level, :cp_multiplier, :cp_multiplier, :dust_to_level_up, :candy_to_level_up, :created_at, :updated_at
+json.url monster_level_url(monster_level, format: :json)

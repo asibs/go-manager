@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :trainer_levels
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   resources :teams, only: [:index, :show]
@@ -11,4 +12,6 @@ Rails.application.routes.draw do
   resources :team_leader_appraisal_best_stat_phrases, only: [:index, :show]
 
   resources :species, only: [:index, :show]
+
+  resources :monster_levels, only: [:index, :show]
 end

@@ -302,3 +302,20 @@ en:
   BASE_ATTACK: "Base Attack"
   BASE_DEFENSE: "Base Defense"
   BASE_STAMINA: "Base Stamina"
+
+  # Monster Level stuff
+  MONSTER_LEVEL: "Monster Level"
+  MONSTER_LEVELS: "Monster Levels"
+
+  CP_MULTIPLIER: "CP Multiplier"
+  DUST_TO_LEVEL_UP: "Stardust to Level Up"
+  CANDY_TO_LEVEL_UP: "Candy to Level Up"
+
+  # Trainer Level stuff
+  TRAINER_LEVEL: "Trainer Level"
+  TRAINER_LEVELS: "Trainer Levels"
+
+  TOTAL_XP: "Total XP"
+  XP_TO_NEXT_LEVEL: "XP to next Level"
+
+

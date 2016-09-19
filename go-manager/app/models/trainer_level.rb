@@ -1,0 +1,2 @@
+class TrainerLevel < ApplicationRecord
+end

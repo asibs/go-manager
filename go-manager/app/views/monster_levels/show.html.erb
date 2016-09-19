@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t(:MONSTER_LEVEL) %>:</strong>
+  <%= @monster_level.level %>
+</p>
+
+<p>
+  <strong><%= t(:CP_MULTIPLIER) %>:</strong>
+  <%= @monster_level.cp_multiplier %>
+</p>
+
+<p>
+  <strong><%= t(:DUST_TO_LEVEL_UP) %>:</strong>
+  <%= @monster_level.dust_to_level_up %>
+</p>
+
+<p>
+  <strong><%= t(:CANDY_TO_LEVEL_UP) %>:</strong>
+  <%= @monster_level.candy_to_level_up %>
+</p>
+
+<%= link_to 'Back', monster_levels_path %>

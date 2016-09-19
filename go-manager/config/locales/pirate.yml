@@ -19,6 +19,11 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
+
+# Yarr! The hyper-map-and-compass-links below will show ye scurvy dogs some pirate-y lingo!
+# https://www.piratevoyages.com/pirate-lingo/
+# http://www.enchantedlearning.com/wordlist/pirate.shtml
+
 pirate:
   
   # ********************************* #
@@ -26,13 +31,13 @@ pirate:
   # ********************************* #
 
   # Team stuff
-  VALOR: "Valor"
-  MYSTIC: "Mystic"
-  INSTINCT: "Instinct"
+  VALOR: "GalliVat 'Valor'"
+  MYSTIC: "Man O' War 'Mystic'"
+  INSTINCT: "Ironclad 'Instinct'"
 
   RED: "Red as blood"
   BLUE: "Deep sea Blue"
-  YELLOW: "Yellow - Like yer father!"
+  YELLOW: "Yellow - Like ye scurvy dogs!"
 
   CANDELA: "Cap'n Candela"
   BLANCHE: "Buccaneer Blanche"
@@ -151,3 +156,20 @@ pirate:
   BASE_ATTACK: "Base Attack"
   BASE_DEFENSE: "Base Defense"
   BASE_STAMINA: "Base Stamina"
+
+  # Monster Level stuff
+  MONSTER_LEVEL: "Seamonster Rank"
+  MONSTER_LEVELS: "Seamonster Ranks"
+
+  CP_MULTIPLIER: "Cap'n Pirate Multiplier"
+  DUST_TO_LEVEL_UP: "Barnacle Dust to Promote"
+  CANDY_TO_LEVEL_UP: "Seamonster Carcasses to Promote"
+
+  # Trainer Level stuff
+  TRAINER_LEVEL: "Shipmate Rank"
+  TRAINER_LEVELS: "Shipmate Ranks"
+
+  TOTAL_XP: "Total Loot Pillaged"
+  XP_TO_NEXT_LEVEL: "Loot required for next Promotion"
+
+

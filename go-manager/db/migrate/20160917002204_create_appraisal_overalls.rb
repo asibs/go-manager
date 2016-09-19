@@ -1,9 +1,9 @@
 class CreateAppraisalOveralls < ActiveRecord::Migration[5.0]
   def change
     create_table :appraisal_overalls do |t|
-      t.string :appraisal_class
-      t.integer :min_total_iv
-      t.integer :max_total_iv
+      t.string :appraisal_class, null: false
+      t.integer :min_total_iv, null: false
+      t.integer :max_total_iv, null: false
 
       t.timestamps
     end

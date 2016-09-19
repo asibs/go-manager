@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= t(:MONSTER_LEVELS) %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t(:MONSTER_LEVEL) %></th>
+      <th><%= t(:CP_MULTIPLIER) %></th>
+      <th><%= t(:DUST_TO_LEVEL_UP) %></th>
+      <th><%= t(:CANDY_TO_LEVEL_UP) %></th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @monster_levels.each do |monster_level| %>
+      <tr>
+        <td><%= monster_level.level %></td>
+        <td><%= monster_level.cp_multiplier %></td>
+        <td><%= monster_level.dust_to_level_up %></td>
+        <td><%= monster_level.candy_to_level_up %></td>
+        <td><%= link_to 'Show', monster_level %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

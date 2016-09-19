@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level: 9.99
+  totalXp: 1
+  xpToNextLevel: 1
+
+two:
+  level: 9.99
+  totalXp: 1
+  xpToNextLevel: 1

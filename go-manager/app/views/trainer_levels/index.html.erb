@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= t(:TRAINER_LEVELS) %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t(:TRAINER_LEVEL) %></th>
+      <th><%= t(:TOTAL_XP) %></th>
+      <th><%= t(:XP_TO_NEXT_LEVEL) %></th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trainer_levels.each do |trainer_level| %>
+      <tr>
+        <td><%= trainer_level.level %></td>
+        <td><%= trainer_level.total_xp %></td>
+        <td><%= trainer_level.xp_to_next_level %></td>
+        <td><%= link_to 'Show', trainer_level %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

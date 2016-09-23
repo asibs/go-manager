@@ -45,12 +45,17 @@ echo "*** Start Step 5 ***"
 gem install rails --version '>= 5'
 echo "*** Finish Step 5 ***"
 
-# 6 - Install MySql (use 5.6 which is supported by AWS - AWS supports 5.7 as well, but Ubuntu apt only has up to 5.6 atm)
+# 6 - Install other required gems
 echo "*** Start Step 6 ***"
+gem install omniauth-facebook
+echo "*** Finish Step 6 ***"
+
+# 7 - Install MySql (use 5.6 which is supported by AWS - AWS supports 5.7 as well, but Ubuntu apt only has up to 5.6 atm)
+echo "*** Start Step 7 ***"
 # Provide password for MySql install prompt
 sudo debconf-set-selections <<< 'mysql-server-5.6 mysql-server/root_password password changeMe'
 sudo debconf-set-selections <<< 'mysql-server-5.6 mysql-server/root_password_again password changeMe'
 sudo apt-get --assume-yes install mysql-server-5.6
 sudo apt-get --assume-yes install mysql-client-5.6
 sudo apt-get --assume-yes install libmysqlclient-dev
-echo "*** Finish Step 6 ***"
+echo "*** Finish Step 7 ***"

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160919221554) do
+ActiveRecord::Schema.define(version: 20160922231253) do
 
   create_table "appraisal_best_stats", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "appraisal_class", null: false
@@ -98,6 +98,20 @@ ActiveRecord::Schema.define(version: 20160919221554) do
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.index ["level"], name: "index_trainer_levels_on_level", unique: true, using: :btree
+  end
+
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "provider",         null: false
+    t.string   "uid",              null: false
+    t.string   "name"
+    t.string   "display_name"
+    t.string   "locale"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.index ["display_name"], name: "index_users_on_display_name", unique: true, using: :btree
+    t.index ["provider", "uid"], name: "index_users_on_provider_and_uid", unique: true, using: :btree
   end
 
 end

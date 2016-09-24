@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   root to: 'teams#index'
 
+  # Read only, static data
   resources :teams, only: [:index, :show]
   resources :team_leaders, only: [:index, :show]
 
@@ -22,4 +23,7 @@ Rails.application.routes.draw do
   match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
   match 'auth/failure', to: redirect('/'), via: [:get, :post]
   match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
+
+  # Dynamic, user modifiable, data
+  resources :monsters, param: :slug
 end

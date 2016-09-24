@@ -1,5 +1,13 @@
 class User < ApplicationRecord
 
+  # Relationships
+  has_many :monster
+
+  # Validation
+  validates_format_of :display_name, with: /\A[A-Za-z0-9]+\z/,
+    message: "must contain only alphanumeric characters"
+
+
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_initialize.tap do |user|
       user.provider = auth.provider

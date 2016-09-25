@@ -12,9 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %>
+    <%= f.label :name, t(:MONSTER_NAME) %>
     <%= f.text_field :name %>
   </div>
+
+  <%= f.fields_for :monster_evolutions do |u| %>
+    <div class="field">
+      <%= u.label :species_id, t(:SPECIES_SINGULAR) %>
+      <%= u.select :species_id, options_from_collection_for_select(species, :id, :translated_name) %>
+    </div>
+  <% end %>
 
   <div class="actions">
     <%= f.submit %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t(:MONSTER_NAME) %>:</strong>
+  <%= @monster_evolution.monster.name %>
+</p>
+
+<p>
+  <strong><%= t(:SPECIES_SINGULAR) %>:</strong>
+  <%= @monster_evolution.species.translated_name %>
+</p>
+
+<%= link_to 'Edit', edit_monster_evolution_path(@monster_evolution) %> |
+<%= link_to 'Back', monster_monster_evolutions_path(@monster_evolution.monster) %>

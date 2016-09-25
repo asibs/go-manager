@@ -1,10 +1,11 @@
 class MonstersController < ApplicationController
   before_action :set_monster, only: [:show, :edit, :update, :destroy]
+  before_action :set_species
 
   # GET /monsters
   # GET /monsters.json
   def index
-    @monsters = @current_user.monster
+    @monsters = @current_user.monsters
   end
 
   # GET /monsters/1
@@ -15,6 +16,7 @@ class MonstersController < ApplicationController
   # GET /monsters/new
   def new
     @monster = Monster.new
+    @monster.monster_evolutions.build
   end
 
   # GET /monsters/1/edit
@@ -24,8 +26,7 @@ class MonstersController < ApplicationController
   # POST /monsters
   # POST /monsters.json
   def create
-    # User ID isn't included in the params object, find it from the current logged in user
-    @monster = Monster.new(monster_params.merge( {user_id: @current_user.id} ))
+    @monster = @current_user.monsters.build(monster_params)
 
     respond_to do |format|
       if @monster.save
@@ -69,8 +70,13 @@ class MonstersController < ApplicationController
       @monster = Monster.find_by(slug: params[:slug], user_id: @current_user.id)
     end
 
+    def set_species
+      @species = Species.cached_all
+    end
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def monster_params
-      params.require(:monster).permit(:name)
+      #params.require(:monster).permit(:name, monster_evolutions_attributes: [:id, :species_id])
+      params.require(:monster).permit(:name, monster_evolutions_attributes: [:species_id])
     end
 end

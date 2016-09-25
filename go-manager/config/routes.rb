@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  root to: 'teams#index'
+  root to: 'monsters#index'
 
   # Read only, static data
   resources :teams, only: [:index, :show]
@@ -25,5 +25,8 @@ Rails.application.routes.draw do
   match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
 
   # Dynamic, user modifiable, data
-  resources :monsters, param: :slug
+  resources :monsters, param: :slug do
+    resources :monster_evolutions, param: :slug, shallow: true
+  end
+  
 end

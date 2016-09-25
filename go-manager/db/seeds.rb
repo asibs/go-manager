@@ -192,7 +192,7 @@
   Species.find_or_initialize_by(species_no: 119).update_attributes!(name: 'SEAKING', base_attack: 172, base_defense: 160, base_stamina: 160)
   Species.find_or_initialize_by(species_no: 120).update_attributes!(name: 'STARYU', base_attack: 130, base_defense: 128, base_stamina: 60)
   Species.find_or_initialize_by(species_no: 121).update_attributes!(name: 'STARMIE', base_attack: 194, base_defense: 192, base_stamina: 120)
-  Species.find_or_initialize_by(species_no: 122).update_attributes!(name: 'MR. MIME', base_attack: 154, base_defense: 196, base_stamina: 80)
+  Species.find_or_initialize_by(species_no: 122).update_attributes!(name: 'MR_MIME', base_attack: 154, base_defense: 196, base_stamina: 80)
   Species.find_or_initialize_by(species_no: 123).update_attributes!(name: 'SCYTHER', base_attack: 176, base_defense: 180, base_stamina: 140)
   Species.find_or_initialize_by(species_no: 124).update_attributes!(name: 'JYNX', base_attack: 172, base_defense: 134, base_stamina: 130)
   Species.find_or_initialize_by(species_no: 125).update_attributes!(name: 'ELECTABUZZ', base_attack: 198, base_defense: 160, base_stamina: 130)
@@ -347,4 +347,3 @@
   TrainerLevel.find_or_initialize_by(level: 39).update_attributes!(total_xp: 15000000, xp_to_next_level: 5000000)
   TrainerLevel.find_or_initialize_by(level: 40).update_attributes!(total_xp: 20000000, xp_to_next_level: nil)
 
-  

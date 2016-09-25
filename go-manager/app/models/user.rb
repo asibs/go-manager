@@ -1,10 +1,10 @@
 class User < ApplicationRecord
 
   # Relationships
-  has_many :monster
+  has_many :monsters
 
   # Validation
-  validates_format_of :display_name, with: /\A[A-Za-z0-9]+\z/,
+  validates_format_of :display_name, with: /\A[A-Za-z0-9]*\z/,
     message: "must contain only alphanumeric characters"
 
 

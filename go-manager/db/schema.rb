@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160923213918) do
+ActiveRecord::Schema.define(version: 20160924132618) do
 
   create_table "appraisal_best_stats", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "appraisal_class", null: false
@@ -28,6 +28,16 @@ ActiveRecord::Schema.define(version: 20160923213918) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
     t.index ["appraisal_class"], name: "index_appraisal_overalls_on_appraisal_class", unique: true, using: :btree
+  end
+
+  create_table "monster_evolutions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "slug",       null: false
+    t.integer  "monster_id", null: false
+    t.integer  "species_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["monster_id", "species_id"], name: "index_monster_evolutions_on_monster_id_and_species_id", unique: true, using: :btree
+    t.index ["slug"], name: "index_monster_evolutions_on_slug", unique: true, using: :btree
   end
 
   create_table "monster_levels", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

@@ -222,7 +222,7 @@ en:
   SEAKING: "Seaking"
   STARYU: "Staryu"
   STARMIE: "Starmie"
-  MR. MIME: "Mr. Mime"
+  MR_MIME: "Mr. Mime"
   SCYTHER: "Scyther"
   JYNX: "Jynx"
   ELECTABUZZ: "Electabuzz"
@@ -317,5 +317,10 @@ en:
 
   TOTAL_XP: "Total XP"
   XP_TO_NEXT_LEVEL: "XP to next Level"
+
+  # Monster stuff
+  MONSTER: "Monster"
+  MONSTERS: "Monsters"
+  MONSTER_NAME: "Monster Name"
 
 

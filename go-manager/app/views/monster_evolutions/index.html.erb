@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= t(:MONSTER_EVOLUTIONS) %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t(:MONSTER_NAME) %></th>
+      <th><%= t(:SPECIES_SINGULAR) %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @monster_evolutions.each do |monster_evolution| %>
+      <tr>
+        <td><%= monster_evolution.monster.name %></td>
+        <td><%= monster_evolution.species.translated_name %></td>
+        <td><%= link_to 'Show', monster_evolution %></td>
+        <td><%= link_to 'Edit', edit_monster_evolution_path(monster_evolution) %></td>
+        <td><%= link_to 'Destroy', monster_evolution, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Monster Evolution', new_monster_monster_evolution_path(@monster) %>
